@@ -19,7 +19,10 @@ def test_runner_safe(test_func, func_name = "<no name>", func_params = tuple(), 
         if test_output != None:
             print("{}".format(test_output))
 
-        print("Je uitwerking voor {} lijkt correct!".format(func_name))
+        if func_name == "<no name>":
+            print("Antwoord correct!")
+        else:
+            print("Je uitwerking voor {} lijkt correct!".format(func_name))
 
     except ImportError as ie:
         print("{}Foutmelding: de functie {} kon niet geïmporteerd worden. Heb je de functienaam correct geprogrammeerd?".format(start_tests, func_name))

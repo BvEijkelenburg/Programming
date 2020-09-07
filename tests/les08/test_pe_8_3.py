@@ -16,28 +16,3 @@ def test_hoogvliegers():
 
 if __name__ == '__main__':
     test_runner_safe(test_hoogvliegers, func_name="hoogvliegers")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# from random import randrange
-# from exercises.les07.pe_7_3 import gemiddelde_van_alle_studenten
-# from exercises.les07.pe_7_3 import gemiddelde_per_student
-# for i in range(10):
-#     lst = []
-#     for i in range(0, randrange(1, 10)):
-#         lst.append([randrange(10, 101), randrange(10, 101), randrange(10, 101)])
-#
-#     print(lst, gemiddelde_van_alle_studenten(lst), gemiddelde_per_student(lst), sep=", ")
